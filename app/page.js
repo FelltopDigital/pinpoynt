@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Layout from "@/components/layout";
+import HomeIntro from "@/components/homeIntro";
+import HomeTryCta from "@/components/homeTryCta";
   
 export default function Home() {
   return (
     <Layout>
-      <h1>Hello World</h1>
+      <HomeIntro />
+      <HomeTryCta />
     </Layout>
   );
 }

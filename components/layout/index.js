@@ -3,7 +3,7 @@ import Header from '@/components/header';
   
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="relative h-[2000px]">
       <Header />
       {children}
     </div>
