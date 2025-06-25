@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Container from '@/components/container';
 import Link from 'next/link';
 import PinpoyntLogo from '@/svgs/pinpoynt-logo';
+import Login from '@/svgs/login';
   
 const Header = ({ children }) => {
 
@@ -19,8 +20,8 @@ const Header = ({ children }) => {
       href: '/product'
     },
     {
-      label: 'Sector',
-      href: '/sector'
+      label: 'Sectors',
+      href: '/sectors'
     },
     {
       label: 'Pricing',
@@ -59,7 +60,14 @@ const Header = ({ children }) => {
             </nav>
           </div>
           <div className="hidden lg:flex items-center">
-            <Link className="border text-sm border-white rounded-full px-6 xl:px-10 py-2 bg-white/20" href="/login">Login</Link>
+            <Link className="text-sm px-6 py-2 flex items-center" href="/login">
+              <span className="mr-2 border bg-orange-400 inset-shadow-sm inset-shadow-black/60 block border-white rounded-full w-[32px] h-[32px]"></span>
+              <span className="text-white text-xl font-medium">Demo</span>
+            </Link>
+            <Link className="text-sm px-6 py-2 flex items-center" href="/login">
+              <span className="mr-2 border block border-white rounded-full p-4"><Login /></span>
+              <span className="text-white text-xl font-medium">Login</span>
+            </Link>
           </div>
           <div className={`lg:hidden w-6 h-6 relative -mt-[4px] cursor-pointer pinpoynt-transition ${isMenuOpen ? 'rotate-180' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <div className={`pointer-events-none absolute right-0 w-full h-[1px] bg-white rounded-full pinpoynt-transition ${isMenuOpen ? 'rotate-45 top-1/2' : 'top-[4px]'}`}></div>

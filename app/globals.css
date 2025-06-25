@@ -3,6 +3,7 @@
 :root {
   --background: #171717;
   --foreground: #ffffff;
+  --pp-orange: #FFAA00;
 }
 
 @theme inline {
@@ -31,4 +32,10 @@ body {
 
 .pinpoynt-transition {
   transition: var(--pinpoynt-transition);
+}
+
+.line {
+  display: block;
+  overflow: hidden;
+  min-height: 1em;
 }
