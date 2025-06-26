@@ -39,3 +39,35 @@ body {
   overflow: hidden;
   min-height: 1em;
 }
+
+@layer utilities {
+  .nth-odd\:items-end {
+    &:nth-of-type(odd) {
+      @apply items-end;
+    }
+  }
+  
+  .nth-odd\:flex-col-reverse {
+    &:nth-of-type(odd) {
+      @apply flex-col-reverse;
+    }
+  }
+
+  .nth-odd\:flex-row {
+    &:nth-of-type(odd) {
+      @apply flex-row;
+    }
+  }
+
+  .nth-odd\:flex-col {
+    &:nth-of-type(odd) {
+      @apply flex-col;
+    }
+  }
+
+  .nth-odd\:flex-row-reverse {
+    &:nth-of-type(odd) {
+      @apply flex-row-reverse;
+    }
+  }
+}
