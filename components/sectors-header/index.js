@@ -345,7 +345,7 @@ const SectorsHeader = () => {
           </div>
         </div>
       </Container>
-      <div className="h-[1000px] bg-red-500"></div>
+      <div className="h-[500px] bg-black"></div>
     </div>
   );
 };
