@@ -104,7 +104,7 @@ const SectorsHeader = () => {
   }, []);
 
   return (
-    <div className="py-36">
+    <div className="pt-52 pb-24 bg-gradient-to-b from-black to-[#11126b]">
       <Container>
         {/* Header section */}
         <div className="flex items-center justify-between flex-wrap mb-38">
@@ -345,7 +345,6 @@ const SectorsHeader = () => {
           </div>
         </div>
       </Container>
-      <div className="h-[500px] bg-black"></div>
     </div>
   );
 };

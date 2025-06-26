@@ -42,7 +42,7 @@ const Header = ({ children }) => {
   ]
 
   return (
-    <header className="mt-6 xl:mt-8">
+    <header className="mt-6 xl:mt-8 absolute top-0 left-0 w-full z-10">
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center">
