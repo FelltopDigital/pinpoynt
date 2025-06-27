@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import SplitText from 'gsap/SplitText';
 import ArrowRight from '@/svgs/arrow-right';
 
-const HomeIntro = () => {
+const HomeTryCta = () => {
   const pRef = useRef(null);
 
   useEffect(() => {
@@ -36,4 +36,4 @@ const HomeIntro = () => {
   );
 };
 
-export default HomeIntro;
+export default HomeTryCta;

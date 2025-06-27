@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import Container from '@/components/container';
 import gsap from 'gsap';
 import SplitText from 'gsap/SplitText';
+import HomeTryCta from '@/components/homeTryCta';
 
 const HomeIntro = () => {
   const pRef = useRef(null);
@@ -22,9 +23,10 @@ const HomeIntro = () => {
   }, []);
 
   return (
-    <div className="py-20 xl:py-30 text-center">
+    <div className="py-10 lg:py-20 text-center h-screen">
       <Container>
         <p ref={pRef} className="text-2xl md:text-4xl xl:text-6xl max-w-xl md:max-w-3xl xl:max-w-5xl mx-auto">uncover footfall and spending patterns, anywhere, in real-time without any physical hardware</p>
+        <HomeTryCta />
       </Container>
     </div>
   );

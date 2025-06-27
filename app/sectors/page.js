@@ -4,7 +4,7 @@ import SectorsHeader from "@/components/sectors-header";
   
 export default function Sectors() {
   return (
-    <Layout>
+    <Layout noPadd>
       <SectorsHeader />
     </Layout>
   );

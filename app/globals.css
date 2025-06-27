@@ -70,4 +70,9 @@ body {
       @apply flex-row-reverse;
     }
   }
+
+  .radial-gradient {
+    background: #ffffff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(102, 131, 204, 1) 58%, rgba(0, 0, 0, 1) 100%);
+  }
 }
