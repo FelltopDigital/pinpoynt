@@ -1,9 +1,76 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'PP Pangram Sans Rounded';
+    ascent-override: 90%;
+  descent-override: 10%;
+  line-gap-override: 0%;
+    src: url('/webfonts/PPPangramSansRounded-Medium.woff2') format('woff2'),
+        url('/webfonts/PPPangramSansRounded-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Pangram Sans Rounded';
+    ascent-override: 90%;
+  descent-override: 10%;
+  line-gap-override: 0%;
+    src: url('/webfonts/PPPangramSansRounded-Light.woff2') format('woff2'),
+        url('/webfonts/PPPangramSansRounded-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Pangram Sans Rounded';
+    ascent-override: 90%;
+  descent-override: 10%;
+  line-gap-override: 0%;
+    src: url('/webfonts/PPPangramSansRounded-Bold.woff2') format('woff2'),
+        url('/webfonts/PPPangramSansRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Eiko';
+    src: url('/webfonts/PPEiko-LightItalic.woff2') format('woff2'),
+        url('/webfonts/PPEiko-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Eiko';
+    src: url('/webfonts/PPEiko-Medium.woff2') format('woff2'),
+        url('/webfonts/PPEiko-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Eiko';
+    src: url('/webfonts/PPEiko-Thin.woff2') format('woff2'),
+        url('/webfonts/PPEiko-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 :root {
-  --background: #171717;
+  --background: #000;
   --foreground: #ffffff;
   --pp-orange: #FFAA00;
+  --font-eiko: 'PP Eiko', serif;
+  --font-pp: 'PP Pangram Sans Rounded', Helvetica, Arial, sans-serif;
 }
 
 @theme inline {
@@ -19,7 +86,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-pp), Arial, Helvetica, sans-serif;
 }
 
 .max-w-9xl {
@@ -38,4 +105,8 @@ body {
   display: block;
   overflow: hidden;
   min-height: 1em;
+}
+
+.font-serif {
+  font-family: var(--font-eiko) !important;
 }
