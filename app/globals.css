@@ -110,3 +110,40 @@ body {
 .font-serif {
   font-family: var(--font-eiko) !important;
 }
+
+@layer utilities {
+  .nth-odd\:items-end {
+    &:nth-of-type(odd) {
+      @apply items-end;
+    }
+  }
+  
+  .nth-odd\:flex-col-reverse {
+    &:nth-of-type(odd) {
+      @apply flex-col-reverse;
+    }
+  }
+
+  .nth-odd\:flex-row {
+    &:nth-of-type(odd) {
+      @apply flex-row;
+    }
+  }
+
+  .nth-odd\:flex-col {
+    &:nth-of-type(odd) {
+      @apply flex-col;
+    }
+  }
+
+  .nth-odd\:flex-row-reverse {
+    &:nth-of-type(odd) {
+      @apply flex-row-reverse;
+    }
+  }
+
+  .radial-gradient {
+    background: #ffffff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(102, 131, 204, 1) 58%, rgba(0, 0, 0, 1) 100%);
+  }
+}

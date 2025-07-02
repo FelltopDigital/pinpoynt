@@ -42,11 +42,12 @@ const Header = ({ children }) => {
   ]
 
   return (
-    <header className="mt-6 xl:mt-8 relative z-100">
+    // <header className="mt-6 xl:mt-8 relative z-100">
+    <header className="absolute top-6 xl:top-8 left-0 w-full z-100">
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <h1><PinpoyntLogo className="w-auto h-8 xl:h-10" /></h1>
+            <Link href="/"><PinpoyntLogo className="w-auto h-8 xl:h-10" /></Link>
           </div>
           <div className="hidden lg:flex items-center mx-6">
             <nav className="border border-white/30 rounded-full px-6 backdrop-blur-lg">

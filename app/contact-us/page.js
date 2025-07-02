@@ -6,7 +6,7 @@ import ArrowRight from '@/svgs/arrow-right';
 export default function ContactUs() {
   return (
     <Layout>
-        <div className="pt-32 pb-16 md:pt-60 md:pb-45 mt-[-56px] md:mt-[-110px] bg-[#5895FF] bg-[url(/contact-bg.jpg)] bg-cover xl:bg-size-[1920px_auto] bg-top bg-no-repeat relative">
+        <div className="pt-32 pb-16 md:pt-60 md:pb-45 mt-[-80px] md:mt-[-144px] bg-[#5895FF] bg-[url(/contact-bg.jpg)] bg-cover xl:bg-size-[1920px_auto] bg-top bg-no-repeat relative">
             <div className="z-10 absolute w-full h-full top-0 left-0 right-0 bottom-0 bg-linear-to-t from-black/85 to-white mix-blend-multiply"></div>
             <Container>
                 <div className="relative z-20 p-6 md:p-[60px] xl:pt-[80px] xl:pr-[120px] xl:pb-[80px] xl:pl-[80px] rounded-[22px] md:rounded-[30px] border-solid border-1 bg-white/5 flex flex-col md:flex-row items-center gap-4 backdrop-blur-lg">
