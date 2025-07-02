@@ -3,6 +3,7 @@
 import React from 'react';
 import Container from '@/components/container';
 import Image from 'next/image';
+import PinpoyntLogo from '@/svgs/logo';
 
 const content = {
   journeyText: "Keep track of our journey here",
@@ -53,6 +54,9 @@ const content = {
 const Footer = () => (
   <footer className="py-12">
     <Container>
+      <div className="flex justify-between items-center text-center w-full my-24">
+        <PinpoyntLogo className="w-auto h-14 lg:h-24 mx-auto" />
+      </div>
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-10">
         {/* Left: Social & Newsletter */}
         <div className="flex flex-col gap-8 lg:w-1/3">
