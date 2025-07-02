@@ -59,8 +59,8 @@ const AccordionItem = ({ item, index }) =>
 
     return (
         <div className="accordion-item">
-            <h2 onClick={toggleAccordion} ref={titleRef} className={`text-[18px] md:text-[24px] items-center flex accordion-title ${isOpen ? 'open' : ''}`} style={{ color: "#DAFFF1", cursor: "pointer", padding: "20px", borderBottom: "1px solid", borderImageSlice: 1, borderImageSource: "linear-gradient(to right, #3179FF, #89CCFF)" }}>
-                <span className="opacity-30 text-[18px] md:text-[20px] mr-[16px] md:mr-[35px] w-8">{(index + 1).toString().padStart(2, '0')}</span>
+            <h2 onClick={toggleAccordion} ref={titleRef} className={`gap-6 text-[18px] md:text-[24px] items-center flex accordion-title py-5 md:px-5 ${isOpen ? 'open' : ''}`} style={{ color: "#DAFFF1", cursor: "pointer", borderBottom: "1px solid", borderImageSlice: 1, borderImageSource: "linear-gradient(to right, #3179FF, #89CCFF)" }}>
+                <span className="opacity-30 text-[18px] md:text-[20px] w-8">{(index + 1).toString().padStart(2, '0')}</span>
                 {item.title}
                 <span className="ml-auto">{isOpen ? '-' : '+'}</span>
             </h2>
@@ -79,7 +79,7 @@ const AccordionItem = ({ item, index }) =>
 export default function Accordions({ items = [] }) 
 {
     return (
-        <div className="accordions max-h-[614px] overflow-auto">
+        <div className="accordions">
             {items.map((item, i) => (
                 <AccordionItem key={i} index={i} item={item} />
             ))}

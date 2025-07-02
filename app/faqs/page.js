@@ -71,7 +71,7 @@ export default function FAQs() {
     <Layout>
         <div className="faqs py-18 md:py-36">
             <Container>
-                <h1 className="text-[36px] md:text-[70px] font-normal font-gs mb-8 md:mb-17.5">our <em className="font-gm font-light">frequently</em> <span className="font-gm font-light">asked</span> questions:</h1>
+                <h1 className="leading-[1.2] md:leading-[1] text-[36px] md:text-[70px] font-normal font-gs mb-8 md:mb-17.5">our <em className="font-gm font-light">frequently</em> <span className="font-gm font-light">asked</span> questions:</h1>
 
                 <div className="flex text-center flex-col md:flex-row md:text-left gap-10 items-center md:px-22 mb-8 md:mb-21.5">
                     <div>

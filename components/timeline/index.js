@@ -35,7 +35,7 @@ const Timeline = ({ entries = [] }) =>
 
                 currentTween = gsap.to(progressEl, {
                     height: targetHeight,
-                    duration: 0.8,
+                    duration: 1,
                     ease: "power2.out",
                 });
             },
