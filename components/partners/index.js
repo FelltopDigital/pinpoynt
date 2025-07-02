@@ -39,6 +39,8 @@ export default function VerticalLogoTicker() {
       <div className="absolute flex flex-col gap-12" ref={tickerRef}>
         {[...logos, ...logos].map((src, idx) => (
           <Image
+            width={100}
+            height={100}
             key={idx}
             src={src}
             alt={`Logo ${idx}`}
