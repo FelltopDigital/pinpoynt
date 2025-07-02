@@ -53,19 +53,19 @@ const Header = ({ children }) => {
               <ul className="flex items-center gap-4">
                 {headerLinks.map((link) => (
                   <li key={link.href}>
-                    <Link className="text-sm font-medium text-white hover:text-gray-300 block py-4 px-3 xl:py-5 xl:px-6" href={link.href}>{link.label}</Link>
+                    <Link className="text-sm font-medium text-white hover:text-gray-300 block py-4 px-3 2xl:py-5 2xl:px-6" href={link.href}>{link.label}</Link>
                   </li>
                 ))}
               </ul>
             </nav>
           </div>
-          <div className="hidden lg:flex items-center">
-            <Link className="text-sm px-6 py-2 flex items-center" href="/login">
+          <div className="hidden lg:flex items-center -mr-4 xl:-mr-6">
+            <Link className="hidden xl:flex text-sm px-4 xl:px-6 py-2 items-center" href="/login">
               <span className="mr-2 border bg-orange-400 inset-shadow-sm inset-shadow-black/60 block border-white rounded-full w-[32px] h-[32px]"></span>
               <span className="text-white text-xl font-medium">Demo</span>
             </Link>
-            <Link className="text-sm px-6 py-2 flex items-center" href="/login">
-              <span className="mr-2 border block border-white rounded-full p-4"><Login /></span>
+            <Link className="text-sm px-4 xl:px-6 py-2 flex items-center" href="/login">
+              <span className="mr-2 border block border-white rounded-full p-2 xl:p-4"><Login /></span>
               <span className="text-white text-xl font-medium">Login</span>
             </Link>
           </div>
