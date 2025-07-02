@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 import ArrowRight from '@/svgs/arrow-right';
 
 const UpcomingMediaEvents = () => 
@@ -16,7 +17,7 @@ const UpcomingMediaEvents = () =>
                     <div className="border-1 rounded-[30px] bg-white/5 p-8 md:pt-14 md:pb-14 md:pl-10 md:pr-8 relative z-5 backdrop-blur-lg h-full">
                         <p className="font-serif font-light text-[24px] md:text-[42px] leading-[32px] md:leading-[52px] mb-8 md:mb-18"><em>‘AI gives retailers new eyes without the cameras’</em></p>
 
-                        <img src="/logo-illuminaire.png" alt="Logo illuminaire" width="312" height="45" className="w-32 md:w-full max-w-[312px] h-auto object-contain mb-8 md:mb-18"/>
+                        <Image src="/logo-illuminaire.png" alt="Logo illuminaire" width="312" height="45" className="w-32 md:w-full max-w-[312px] h-auto object-contain mb-8 md:mb-18"/>
 
                         <a href="#" className="bg-white/20 border border-white text-white px-8 py-3 rounded-full cursor-pointer inline-flex items-center justify-center gap-2 relative group lg:hover:pr-14 pinpoynt-transition">
                             <span>Read more</span>
@@ -30,7 +31,7 @@ const UpcomingMediaEvents = () =>
                     <div className="border-1 rounded-[30px] bg-white/5 p-8 md:pt-14 md:pb-14 md:pl-10 md:pr-8 relative z-5 backdrop-blur-lg h-full">
                         <p className="font-serif font-light text-[24px] md:text-[42px] leading-[32px] md:leading-[52px] mb-8 md:mb-18"><em>‘UK Al tool promises real-time shopper footfall and spending’</em></p>
 
-                        <img src="/logo-grocer.png" alt="Logo grocer" width="215" height="60" className="w-32 md:w-full max-w-[215px] h-auto object-contain mb-8 md:mb-18"/>
+                        <Image src="/logo-grocer.png" alt="Logo grocer" width="215" height="60" className="w-32 md:w-full max-w-[215px] h-auto object-contain mb-8 md:mb-18"/>
 
                         <a href="#" className="bg-white/20 border border-white text-white px-8 py-3 rounded-full cursor-pointer inline-flex items-center justify-center gap-2 relative group lg:hover:pr-14 pinpoynt-transition">
                             <span>Read more</span>
@@ -44,7 +45,7 @@ const UpcomingMediaEvents = () =>
                     <div className="border-1 rounded-[30px] bg-white/5 p-8 md:pt-14 md:pb-14 md:pl-10 md:pr-8 relative z-5 backdrop-blur-lg h-full">
                         <p className="font-serif font-light text-[24px] md:text-[42px] leading-[32px] md:leading-[52px] mb-8 md:mb-18"><em>‘Yellow Sub AI launches launches Pinpoynt.ai software solution’</em></p>
 
-                        <img src="/logo-rtih.png" alt="Logo RTIH" width="245" height="72" className="w-32 md:w-full max-w-[245px] h-auto object-contain mb-8 md:mb-18"/>
+                        <Image src="/logo-rtih.png" alt="Logo RTIH" width="245" height="72" className="w-32 md:w-full max-w-[245px] h-auto object-contain mb-8 md:mb-18"/>
 
                         <a href="#" className="bg-white/20 border border-white text-white px-8 py-3 rounded-full cursor-pointer inline-flex items-center justify-center gap-2 relative group lg:hover:pr-14 pinpoynt-transition">
                             <span>Read more</span>

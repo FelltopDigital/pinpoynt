@@ -42,7 +42,6 @@ const Header = ({ children }) => {
   ]
 
   return (
-    // <header className="mt-6 xl:mt-8 relative z-100">
     <header className="absolute top-6 xl:top-8 left-0 w-full z-100">
       <Container>
         <div className="flex justify-between items-center">

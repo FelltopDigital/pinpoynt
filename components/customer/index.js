@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 const Customer = ({ customer = {} }) => 
 {
@@ -13,7 +14,7 @@ const Customer = ({ customer = {} }) =>
                     <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
                         <div className="flex gap-[24px] md:gap-[58px] items-center flex-wrap">
                             {customer.logos?.map((logo, index) => (
-                                <img key={index} src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} className="object-contain w-16 h-16 sm:w-24 sm:h-24 lg:w-auto lg:h-auto" />
+                                <Image key={index} src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} className="object-contain w-16 h-16 sm:w-24 sm:h-24 lg:w-auto lg:h-auto" />
                             ))}
                         </div>
                     </div>

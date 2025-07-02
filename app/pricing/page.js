@@ -12,7 +12,7 @@ export default function Pricing() {
                     <div className="md:w-1/2">
                         <h1 className="text-[36px] md:text-[66px] font-normal font-gs mb-8 md:mb-17.5">transparent, <span className="font-serif font-light">scalable,</span> designed <span className="font-serif font-light">for <em>you</em></span></h1>
                         <p className="md:max-w-[590px] opacity-80 text-[16px] md:text-[22px] mb-6 md:mb-10">Our pricing model is based on a flexible subscription service, designed to adapt to your needs.</p>
-                        <p className="md:max-w-[590px] opacity-80 text-[16px] md:text-[22px]">Whether you're monitoring a single location or deploying globally, we tailor each plan to your coverage, data requirements, and depth of insight.</p>
+                        <p className="md:max-w-[590px] opacity-80 text-[16px] md:text-[22px]">Whether you&apos;re monitoring a single location or deploying globally, we tailor each plan to your coverage, data requirements, and depth of insight.</p>
                     </div>
 
                     <div className="md:w-1/2">

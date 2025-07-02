@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from "next/image";
 import gsap from 'gsap';
 
 const logos = [
@@ -37,7 +38,7 @@ export default function VerticalLogoTicker() {
 
       <div className="absolute flex flex-col gap-12" ref={tickerRef}>
         {[...logos, ...logos].map((src, idx) => (
-          <img
+          <Image
             key={idx}
             src={src}
             alt={`Logo ${idx}`}

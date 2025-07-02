@@ -1,4 +1,5 @@
 import Layout from "@/components/layout";
+import Image from "next/image";
 import Container from '@/components/container';
 import Timeline from '@/components/timeline';
 import Customer from '@/components/customer';
@@ -85,15 +86,15 @@ export default function About() {
 
             <div className="p-8 md:p-0 mb-0 md:mb-32 flex-row flex-wrap md:flex-nowrap gap-[24px] md:gap-[54px] flex items-center">
                 <figure className="order-1 md:order-1 flex-1 md:flex-initial w-1/2 md:w-1/8 flex justify-start">
-                    <img src="about-left.jpg" alt="About left image" width="219" height="421" className="w-full h-auto max-h-[150px] object-cover object-[65%_15%] md:max-h-[none] rounded-[16px] md:rounded-[30px]" />
+                    <Image src="/about-left.jpg" alt="About left image" width="219" height="421" className="w-full h-auto max-h-[150px] object-cover object-[65%_15%] md:max-h-[none] rounded-[16px] md:rounded-[30px]" />
                 </figure>
 
                 <figure className="order-3 md:order-2 w-full md:w-6/8">
-                    <img src="about-main.jpg" alt="About main image" width="1366" height="486" className="w-full object-cover object-[60%_50%] h-[180px] sm:h-[220px] md:h-auto rounded-[16px] md:rounded-[30px]" />
+                    <Image src="/about-main.jpg" alt="About main image" width="1366" height="486" className="w-full object-cover object-[60%_50%] h-[180px] sm:h-[220px] md:h-auto rounded-[16px] md:rounded-[30px]" />
                 </figure>
 
                 <figure className="order-2 md:order-3 flex-1 md:flex-initial w-1/2 md:w-1/8 flex justify-end">
-                    <img src="about-right.jpg" alt="About right image" width="219" height="421" className="w-full h-auto max-h-[150px] object-cover object-[50%_5%] md:max-h-[none] rounded-[16px] md:rounded-[30px]" />
+                    <Image src="/about-right.jpg" alt="About right image" width="219" height="421" className="w-full h-auto max-h-[150px] object-cover object-[50%_5%] md:max-h-[none] rounded-[16px] md:rounded-[30px]" />
                 </figure>
             </div>
 
